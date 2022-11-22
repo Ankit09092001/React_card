@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import bmw from './bmw.jpg'
+import audi from './audi.jpg'
+import jaguar from './jaguar.jpg'
+import mercedes from './mercedes.jpg'
 import './App.css';
+import Card from './card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='cars'>
+         <Card car={bmw} name="BMW"/>
+         <Card car={audi} name="AUDI"/>
+         <Card car={jaguar} name="JAGUAR"/>
+         <Card car={mercedes} name="MERCEDES"/>
     </div>
   );
 }
